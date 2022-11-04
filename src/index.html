@@ -16,7 +16,7 @@
       <script type="text/javascript" src="./main.js"></script>
     </header>
     <section>
-      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" >
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
         <fieldset>
           <legend>Personal information</legend>
           <div>
@@ -64,7 +64,7 @@
               >
             </label>
           </div>
-          <div>
+          <div class="last">
             <label>
               I accept the term of the agreement
               <input
@@ -88,7 +88,7 @@
               >
             </label>
           </div>
-          <div>
+          <div class="last">
             <label>
               Password:
               <input
@@ -99,7 +99,7 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>An interesting fact about you?</legend>
+          <legend>An interesting fact about you!</legend>
           <div>
             <label>Do you love cats?</label>
             <label>
@@ -120,7 +120,7 @@
           </div>
           <div>
             <label>
-              What is your favourite color?
+              What is your favorite color?
               <input
                 type="color"
                 name="color"
@@ -135,11 +135,12 @@
                 type="time"
                 name="time"
                 required
+                step="1"
               >
             </label>
           </div>
           <div>
-            <label for="car">What is your favourite   brand of cars?</label>
+            <label for="car">What are your favorite   brand of cars?</label>
             <select
              id="car"
               name="cars"
@@ -152,7 +153,7 @@
               <option value="Lada">Lada</option>
             </select>
           </div>
-          <div>
+          <div class="last">
             <label>
               How do you rate our work?
               <input
@@ -167,13 +168,13 @@
         <fieldset>
           <legend>Additional info:</legend>
           <div>
-            <label>Comments:<textarea name="Comments"></textarea></label>
+            <label>Comments: <textarea name="Comments"></textarea></label>
           </div>
-          <div>
+          <div class="last">
             <label for="recommend">Would you recommend us?</label>
             <select id="recommend" name="recommend">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
             </select>
           </div>
         </fieldset>
