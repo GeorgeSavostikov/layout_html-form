@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <h1>HTML Form</h1>
+      <!-- <h1>HTML Form</h1> -->
       <script type="text/javascript" src="./main.js"></script>
     </header>
     <section>
@@ -25,6 +25,7 @@
               name="sname"
               type="text"
               required
+              autocomplete="off"
             >
           </label>
           <label>
@@ -33,6 +34,7 @@
               name="name"
               type="text"
               required
+              autocomplete="off"
             >
           </label>
           <label>
@@ -41,6 +43,9 @@
               name="age"
               type="number"
               required
+              min="1"
+              max="100"
+              value="12"
             >
           </label>
           <label>
@@ -68,6 +73,7 @@
               name="E-mail"
               type="email"
               required
+              placeholder="email@example.com"
             >
           </label>
           <label>
@@ -117,6 +123,8 @@
             id="car"
             name="cars"
             required
+            size="4"
+            multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -128,6 +136,7 @@
               type="range"
               name="mark"
               required
+              value="0"
             >
           </label>
         </fieldset>
@@ -140,7 +149,7 @@
             <option value="No">No</option>
           </select>
         </fieldset>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
     <footer>
